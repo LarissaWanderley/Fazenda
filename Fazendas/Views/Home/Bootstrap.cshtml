@@ -7,13 +7,46 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylessheet" type="text/css" href="~/Content/css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Css/estilos.css" />
 </head>
 
 <body>
-    <section class="container">
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapse-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="#nossos-projetos">Nossos Projetos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="topCasaFina-banner">
+            <h1>TopCasaFina Arquitetura</h1>
+            <p>Projetando a casa dos sonhos desde 2000 A.C</p>
+            <button class="btn btn-primary btn-lg">Contate-nos agora</button>
+        </div>
+
+    </header>
+    <section id="sobre-nos" class=" container">
         <h2>Sobre Nós</h2>
         <img class="img-responsive" src="~/Content/img/empresa.jpg" alt="">
 
@@ -64,7 +97,7 @@
     </div>
    
    
-    <section class="container">
+    <section id="nossos-projetos" class="container">
         <h2>Nossos Projetos</h2>
 
         <figure class="thumbnail">
@@ -123,7 +156,7 @@
         </div>
     </section>
    
-    <section>
+    <section id="depoimentos">
 
         <h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
 
@@ -169,6 +202,11 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="topCasaFina-banner">
+            <h1>TopCasaFina Arquitetura</h1>
+            <p>Projetando a casa dos sonhos desde 2000 A.C</p>
+            <button class="btn btn-primary btn-lg"> Contate-nos agora</button>
+        </div>
     </section>
    <section>
        <h2> Vídeo Institucional</h2>
@@ -177,7 +215,7 @@
        </div>
 
    </section>
-    <section>
+    <section id="contato" class="container">
         <h2>Contato</h2>
         <p>Entre em contato conosco</p>
 
@@ -193,35 +231,51 @@
                     <div class="input-group-addon">xx</div>
                     <input type="email" class="form-control" id="contato-email" placeholder="Seu e-mail">
                 </div>
-                
-            </div>
-            <div class="radio">
-                <input type="radio" name="tipo-pessoal" checked>
-                Pessoa Física
-                <input type="radio" name="tipo-pessoal">
-                Pessoa Jurídica
-            </div>
-            <select class="form-control">
-                <option disabled selected>Tipo de Situação</option>
-                <option>Casa</option>
-                <option>Apartamento</option>
-                <option>Mansão</option>
-            </select>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+                <div class="grupo-radio">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="tipo-pessoa" value="fisica" checked>
+                            Pessoa física
+                        </label>
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="tipo-pessoa" value="juridica">
+                            Pessoa jurídica
+                        </label>
+                    </div>
+                </div>
+                <!--
+
+    -->
+                <select class="contato-select form-control" name="tipo-solicitacao">
+                    <option value="" disabled selected>Tipo de solicitação</option>
+                    <option value="casa">Casa</option>
+                    <option value="mansao">Mansão</option>
+                    <option value="castelo">Castelo</option>
+                </select>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+             </div>
         </form>
 
     </section>
-    <div>
-        <p>Vamos continuar estilizando e montando o formulário que temos no trecho "Contato". Falta acrescentarmos os "bullets" para que possamos alterar de "Pessoa Física" para "Pessoa Jurídica".
-Para acrescentar isso voltamos ao nosso código e usamos um input. A diferença desse input para os demais que estivemos utilizando até o momento é o type, que no caso é um radio. Depois que adicionamos o input type="radio" podemos acrescentar o primeiro texto, "Pessoa Física", e para o segundo "bullet" repetimos o processo alterando apenas o conteúdo. Teremos o seguinte:
+    <footer>
+        <address>
+            <strong>TopCasaFina Arquitetura</strong><br>
+            Rua Vergueiro, 3185, Vila Mariana<br>
+            São Paulo, SP<br>
+            Tel: (11) 5571-2751 ou 5083-3884
+        </address>
+        <address>
+            E-mail: contato.topcasafina@alura.com.br
+        </address>
+    </footer>
 
-        </p>
-    </div>
-    <section>
 
-    </section>
     <script src="~/Content/js/jquery.js"></script>
     <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/navbar-animation-fix.js"></script>
 </body>
 </html>
 

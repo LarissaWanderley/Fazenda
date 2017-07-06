@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,12 +85,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Css\bootstrap.css" />
+    <Content Include="Content\Css\estilos.css" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\img\casa-castelo.png" />
+    <Content Include="Content\img\casa-lago.png" />
+    <Content Include="Content\img\castelo.jpg" />
+    <Content Include="Content\img\depoimentos\asasa.jpg" />
+    <Content Include="Content\img\depoimentos\castelo1.jpg" />
+    <Content Include="Content\img\depoimentos\cc.jpg" />
+    <Content Include="Content\img\depoimentos\projetos0.png" />
+    <Content Include="Content\img\depoimentos\projetos1.png" />
+    <Content Include="Content\img\depoimentos\projetos2.png" />
+    <Content Include="Content\img\empresa.jpg" />
+    <Content Include="Content\img\mercado-marapira.png" />
+    <Content Include="Content\img\palacio-dionisio.png" />
+    <Content Include="Content\img\residencia-ludi.png" />
+    <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GrupoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MovimentoController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\SubGrupoController.cs" />
@@ -121,6 +140,12 @@
     <Content Include="Views\Perfil\Index.cshtml" />
     <Content Include="Views\Movimento\Index.cshtml" />
     <Content Include="Views\SubGrupo\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Bootstrap.cshtml" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

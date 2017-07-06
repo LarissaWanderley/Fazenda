@@ -1,0 +1,227 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylessheet" type="text/css" href="~/Content/css/estilos.css" />
+</head>
+
+<body>
+    <section class="container">
+        <h2>Sobre Nós</h2>
+        <img class="img-responsive" src="~/Content/img/empresa.jpg" alt="">
+
+        <div class="panel-group" id="paineis-sobre">
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Desde 1935</h3>
+                </div>
+
+                <div class="collapse in" id="primeiro-paragrafo">
+                    <div class="panel-body">
+                        Desde 1935 trazendo casas, mansões e prédios lindos para o mundo
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Preços acessíveis</h3>
+                </div>
+
+                <div id="segundo-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        Alegria para colaborar com um mundo mais bonito
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+                    <h3 class="panel-title">Alegria em colaborar para um mundo mais bonito</h3>
+                </div>
+
+                <div id="terceiro-paragrafo" class="collapse">
+                    <div class="panel-body">
+                        Trazendo alegria para a vida das pessoas que tem dinheiro para gastar.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h3>Mais de 300 prêmios em design e em conforto </h3>
+            <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo </p>
+        </div>
+    </div>
+   
+   
+    <section class="container">
+        <h2>Nossos Projetos</h2>
+
+        <figure class="thumbnail">
+            <img src="~/Content/img/casa-castelo.png" alt="Foto da Casa Castelo">
+            <figcaption class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+            </figcaption>
+        </figure>
+
+        <figure class="thumbnail">
+            <img src="~/Content/img/casa-lago.png" alt="Foto da Casa Lago">
+            <figcaption class="caption">
+                <h3>Casa do Lago </h3>
+                <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época</p>
+            </figcaption>
+        </figure>
+        <div class="thumbnail">
+            <img class="img-fluid" src="~/Content/img/residencia-ludi.png" alt="Card image cap">
+            <div class="caption">
+                <h3>Residência Ludi</h3>
+                <p>A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing.</p>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img class="img-fluid" src="~/Content/img/mercado-marapira.png" alt="Card image cap">
+            <div class="caption">
+                <h3>Mercado Marapira</h3>
+                <p>O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas.</p>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img class="img-fluid" src="~/Content/img/palacio-dionisio.png" alt="Card image cap">
+            <div class="caption">
+                <h3>Palácio Dionísio</h3>
+                <p>O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo.</p>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img class="img-fluid" src="~/Content/img/casa-lago.png" alt="Card image cap">
+            <div class="caption">
+                <h3>Casa do Lago</h3>
+                <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época.</p>
+            </div>
+        </div>
+
+        <div class="thumbnail">
+            <img class="img-fluid" src="~/Content/img/casa-castelo.png" alt="Card image cap">
+            <div class="caption">
+                <h3>Casa Castelo</h3>
+                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+
+        <h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <figure class="item active">
+                    <img src="~/Content/img/depoimentos/projetos0.png" alt="Depoimento 1">
+                    <figcaption class="carousel-caption">
+                        <h3>Yuri Padilha</h3>
+                        <p>Gostei muito e achei rápido o serviço.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="~/Content/img/depoimentos/projetos1.png" alt="Depoimento 2">
+                    <figcaption class="carousel-caption">
+                        <h3>Fernando Stafaneni</h3>
+                        <p>Excelente trabalho.</p>
+                    </figcaption>
+                </figure>
+                <figure class="item">
+                    <img src="~/Content/img/depoimentos/projetos2.png" alt="Depoimento 3">
+                    <figcaption class="carousel-caption">
+                        <h3>Caio Sauzas</h3>
+                        <p>Gostei, competência em primeiro lugar.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+   <section>
+       <h2> Vídeo Institucional</h2>
+       <div class="embed-responsive embed-responsive-16by9">
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI" frameborder="0" allowfullscreen></iframe>
+       </div>
+
+   </section>
+    <section>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco</p>
+
+        <form>
+            <div class="form-group">
+                <label for="contato-name"> Nome:</label>
+                <input class="form-control" id="contato-name" type="text" placeholder="Seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="contato-email">Email</label>
+                <div class="input-group">
+                    <div class="input-group-addon">xx</div>
+                    <input type="email" class="form-control" id="contato-email" placeholder="Seu e-mail">
+                </div>
+                
+            </div>
+            <div class="radio">
+                <input type="radio" name="tipo-pessoal" checked>
+                Pessoa Física
+                <input type="radio" name="tipo-pessoal">
+                Pessoa Jurídica
+            </div>
+            <select class="form-control">
+                <option disabled selected>Tipo de Situação</option>
+                <option>Casa</option>
+                <option>Apartamento</option>
+                <option>Mansão</option>
+            </select>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+
+    </section>
+    <div>
+        <p>Vamos continuar estilizando e montando o formulário que temos no trecho "Contato". Falta acrescentarmos os "bullets" para que possamos alterar de "Pessoa Física" para "Pessoa Jurídica".
+Para acrescentar isso voltamos ao nosso código e usamos um input. A diferença desse input para os demais que estivemos utilizando até o momento é o type, que no caso é um radio. Depois que adicionamos o input type="radio" podemos acrescentar o primeiro texto, "Pessoa Física", e para o segundo "bullet" repetimos o processo alterando apenas o conteúdo. Teremos o seguinte:
+
+        </p>
+    </div>
+    <section>
+
+    </section>
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+</body>
+</html>
+

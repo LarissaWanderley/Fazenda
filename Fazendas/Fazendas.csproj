@@ -90,7 +90,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GrupoController.cs" />
+    <Compile Include="Controllers\MovimentoController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
+    <Compile Include="Controllers\SubGrupoController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Dominio\Grupo.cs" />
     <Compile Include="Dominio\Movimento.cs" />
@@ -100,6 +102,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Persistencia\DBPerfil.cs" />
+    <Compile Include="Persistencia\DBGrupo.cs" />
+    <Compile Include="Persistencia\DBSubGrupo.cs" />
     <Compile Include="Persistencia\DBUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -112,6 +117,10 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Grupo\Index.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Perfil\Index.cshtml" />
+    <Content Include="Views\Movimento\Index.cshtml" />
+    <Content Include="Views\SubGrupo\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,8 +131,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Perfil\" />
-    <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

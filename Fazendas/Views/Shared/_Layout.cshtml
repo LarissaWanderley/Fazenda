@@ -4,16 +4,49 @@
   
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <ul class="nav nav-pills pull-right">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("Produtos", "Index", "Produto")</li>
-                <li>@Html.ActionLink("Categorias", "Index", "CategoriaDoProduto")</li>
-                <li>@Html.ActionLink("Usuários", "Index", "Usuario")</li>
-            </ul>
-            <h3 class="muted-text">Fazendas AM</h3>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar">123</span>
+                    <span class="icon-bar">abc</span>
+                    <span class="icon-bar">567</span>
+                </button>
+                <a class="navbar-brand" href="#">Fazenda AM</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign in</button>
+                </form>
+            </div><!--/.navbar-collapse -->
         </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Grupo", "Index", "Grupo")</li>
+                    <li>@Html.ActionLink("Subgrupo", "Index", "SubGrupo")</li>
+                    <li>@Html.ActionLink("Movimento", "Index", "Movimento")</li>
+                    <li>@Html.ActionLink("Perfil", "Index", "Perfil")</li>
+                    <li>@Html.ActionLink("Usuários", "Index", "Usuario")</li>
+                </ul>
+            </div>
+   
+        </div>
+    </div>
+    <div class="container">
         <div id="conteudo">
             @RenderBody()
         </div>

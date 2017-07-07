@@ -1,9 +1,10 @@
 ﻿<html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet"  href="~/Content/Css/bootstrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Content/Css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Css/estilos.css" />
 </head>
 <body>
 
@@ -12,9 +13,9 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">123</span>
-                    <span class="icon-bar">abc</span>
-                    <span class="icon-bar">567</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">Fazenda AM</a>
             </div>
@@ -37,7 +38,7 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li>@Html.ActionLink("Homddde", "Index", "Home"  )</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home"  )</li>
                     <li>@Html.ActionLink("Grupo", "Index", "Grupo")</li>
                     <li>@Html.ActionLink("Subgrupo", "Index", "SubGrupo")</li>
                     <li>@Html.ActionLink("Movimento", "Index", "Movimento")</li>

@@ -11,10 +11,10 @@ namespace Fazendas.Dominio
     {
         public int Id { get; set; }
 
-        [StringLengthAttribute(20)]
+        [StringLengthAttribute(20),Required]
         public string Login { get; set; }
 
-        [StringLengthAttribute(50)]
+        [StringLengthAttribute(50),Required]
         public string Nome { get; set; }
 
         [StringLengthAttribute(50)]

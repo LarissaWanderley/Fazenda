@@ -21,5 +21,10 @@ namespace Fazendas.Persistencia
             return ExecCmdSQL("SELECT * FROM Usuario WHERE Login = @Login AND Senha = @Senha ", parameters: paramentros).FirstOrDefault();
 
         }
+        internal static List<Usuario> PorNome(string nome)
+        {
+            return ExecCmdSQL(cmdText: "SELECT * FROM ZUsuario WHERE Nome = @Nome "
+                , parameters: new List<DbParameter>() { new SqlParameter("@Nome", nome) });
+        }
     }
 }

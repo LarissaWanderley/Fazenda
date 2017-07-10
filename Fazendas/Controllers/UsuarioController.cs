@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Fazendas.Dominio;
+using Fazendas.Persistencia;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,12 +13,34 @@ namespace Fazendas.Controllers
         // GET: Usuario
         public ActionResult Index()
         {
-            return View();
+            List<Usuario> usuarios = DBUsuario.GetAll();
+            return View(usuarios);
         }
         public ActionResult Incluir()
         {
               return View();
           }
+        public ActionResult Adiciona(Usuario usuario)
+        {
+            if (usuario.Id == 0)
+            {
+                List<Usuario> existe = DBUsuario.PorNome(usuario.Nome);
+                if (existe.Count > 0)
+                {
+                    ModelState.AddModelError("usuario.NomeJaCadastrado", "Nome do Usuário já Cadastrado");
+                }
+            }
+            if (ModelState.IsValid)
+            {
+                DBUsuario.Save(usuario);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Usuario = usuario; ;
+                return View("Form");
+            }
+        }
     }
    
 }

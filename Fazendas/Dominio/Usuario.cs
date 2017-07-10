@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Fazendas.Dominio
 {
-    [DBBroker.Mapping.DBMappedClass(Table = "Usuario", PrimaryKey = "IdUsuario")]
+    [DBBroker.Mapping.DBMappedClass(Table = "zUsuario", PrimaryKey = "IdUsuario")]
     public class Usuario
     {
         public int Id { get; set; }

@@ -1,1 +1,24 @@
-﻿<h1>Usuario</h1>
+﻿@model IList<Fazendas.Dominio.Usuario>
+
+<table class="table table-condensed table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome </th>
+            <th>E-Mail</th>
+            <th>@Html.ActionLink("Cadastrar", "Incluir", "Usuario", null, new { @class = "btn btn-info btn-xs pull-right" })</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+            {
+            <tr>
+                <td>@usuario.Id</td>
+                <td>@Html.ActionLink(usuario.Nome, "Visualiza", new { id = usuario.Id })</td>
+                <td>@usuario.Email</td>
+                <td>@Html.ActionLink("Excluir", "Excluir", new { id = usuario.Id }, new { @class = "btn btn-info btn-xs  pull-right", @onclick = "JavaScript:return(confirm('Deseja Excluir?'))" })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

@@ -4,9 +4,9 @@
 
     <p>Já Possui Cadastro? Então faça seu login</p>
     <form action="@Url.Action("Autentica", "Autenticacao")">
-        <input type="text" class="input-block-level" placeholder="E-mail" />
+        <input type="text" class="input-block-level" placeholder="E-mail" required />
 
-        <input type="password" class="input-block-level" placeholder="Senha" />
+        <input type="password" class="input-block-level" placeholder="Senha" required />
 
         <input type="submit" class="btn btn-large btn-primary" value="Fazer Login" />
     </form>
@@ -18,8 +18,13 @@
     <p>Se você ainda não tem um cadastro, informe qual é o e-mail que você deseja associar com sua conta</p>
 
     <form action="@Url.Action("Form", "Usuarios")">
-        <input type="text" class="input-block-level" placeholder="E-mail" name="Email"/>
+        <input type="text" class="input-block-level" placeholder="E-mail" name="Email" />
 
         <input type="submit" class="btn btn-large btn-primary" value="Criar Conta" />
     </form>
 </div>
+
+@section Scripts {
+    <script type="text/javascript" src="~/Scripts/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.validate.js"></script>
+}

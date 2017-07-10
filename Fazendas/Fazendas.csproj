@@ -84,8 +84,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Css\bootstrap-responsive.css" />
+    <Content Include="Content\Css\bootstrap-responsive.min.css" />
     <Content Include="Content\Css\bootstrap.css" />
     <Content Include="Content\Css\estilos.css" />
+    <Content Include="Content\Css\Style.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\img\casa-castelo.png" />
     <Content Include="Content\img\casa-lago.png" />
@@ -110,6 +113,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GrupoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\MovimentoController.cs" />
     <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\SubGrupoController.cs" />
@@ -117,7 +121,9 @@
     <Compile Include="Dominio\Grupo.cs" />
     <Compile Include="Dominio\Movimento.cs" />
     <Compile Include="Dominio\Perfil.cs" />
+    <Compile Include="Dominio\Sexo.cs" />
     <Compile Include="Dominio\SubGrupo.cs" />
+    <Compile Include="Dominio\Estado .cs" />
     <Compile Include="Dominio\Usuario.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -147,6 +153,9 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\Shared\_MenuSuperior.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
+    <Content Include="Views\Usuario\Incluir.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

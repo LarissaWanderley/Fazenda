@@ -1,0 +1,45 @@
+<div class="navbar navbar-default  navbar-fixed-top">
+    <nav class="navbar navbar-default">
+        @*<div class="container">*@
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              @*  @Html.ActionLink("Fazendas", "Index", "Home", null, new { @class = "brand" })
+                <a class="navbar-brand" href="#">TopCasaFina Arquitetura</a>*@
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapse-navbar">
+                @*Html.ActionLink("Fazendas", "Index", "Home", null, new { @class = "brand" })*@
+                <ul class="nav nav-pills  nav-justified ">
+                    <li>@Html.ActionLink("Fazendas", "Index", "Home", null, new { @class = "brand" })</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "btn btn-default navbar-btn" })</li>
+                    <li>@Html.ActionLink("Grupo", "Index", "Grupo", null, new { @class = "btn btn-default navbar-btn" })</li>
+                    <li>@Html.ActionLink("Subgrupo", "Index", "SubGrupo", null, new { @class = "btn btn-default navbar-btn" })</li>
+                    <li>@Html.ActionLink("Movimento", "Index", "Movimento", null, new { @class = "btn btn-default navbar-btn"} )</li>
+                    <li>@Html.ActionLink("Perfil", "Index", "Perfil", null, new { @class = "btn btn-default navbar-btn" })</li>
+                    <li>@Html.ActionLink("Usuários", "Index", "Usuario", null, new { @class = "btn btn-default navbar-btn" })</li>
+                </ul>
+                @*<p>
+                    @if (Session["usuarioLogado"] != null)
+                    {
+                        @: Bem-Vindo
+                        @Session["usuarioLogado"]
+                        @Html.ActionLink("Logout", "Logout", "Autenticacao")
+                    }
+                    else
+                    {
+                        @: Olá Visitante,
+                        @Html.ActionLink("Login", "Index", "Autenticacao")
+                        @: ou
+                        @Html.ActionLink("Cadastre-se", "Form", "Usuarios")
+                    }
+                </p>*@
+            </div>
+        @*</div>*@
+    </nav>
+</div>

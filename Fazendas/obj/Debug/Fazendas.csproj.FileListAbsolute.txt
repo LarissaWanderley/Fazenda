@@ -65,3 +65,5 @@ E:\curso\MVC\fazenda\Fazendas\bin\pt\DBBroker.resources.dll
 E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.csprojResolveAssemblyReference.cache
 E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.dll
 E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.pdb
+E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.Internacionalizacao.Mensagens.resources
+E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.csproj.GenerateResource.Cache

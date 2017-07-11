@@ -41,6 +41,13 @@ namespace Fazendas.Controllers
                 return View("Form");
             }
         }
+        public ActionResult Excluir(int id)
+        {
+            {
+                DBUsuario.Delete(id);
+                return RedirectToAction("Index");
+            }
+        }
     }
    
 }

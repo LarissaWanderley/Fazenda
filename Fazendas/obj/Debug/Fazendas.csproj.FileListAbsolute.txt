@@ -67,3 +67,5 @@ E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.dll
 E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.pdb
 E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.Internacionalizacao.Mensagens.resources
 E:\curso\MVC\fazenda\Fazendas\obj\Debug\Fazendas.csproj.GenerateResource.Cache
+C:\Users\LarissaMW\Documents\Cursos\alura\MVC\Fazendas\Fazendas\obj\Debug\Fazendas.Internacionalizacao.Mensagens.resources
+C:\Users\LarissaMW\Documents\Cursos\alura\MVC\Fazendas\Fazendas\obj\Debug\Fazendas.csproj.GenerateResource.Cache
